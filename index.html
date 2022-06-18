@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+    <title>Weather App</title>
+  </head>
+  <body>
+  <div class="container">
+    <form class="search" id="search">
+      <input type="text" placeholder="Search city" class="city" id="city-value"/>
+      <input type="submit" value="Submit" id="search-city">
+      <button id="current-location-button" class="currentButton">Current</button>
+    </form>
+    
+        <div class="real-time-forecast">
+        <div class="row">
+            <div class="col">
+             <h2 id="currentCity"></h2>
+             <br/>
+             <p>Saturday 15:04</p>
+             <span id = "description"></span>
+            </div>
+            <div class="col">
+             <h2 id="currentTemperature"> </h2>
+        
+             <ul>
+               <li>Humidity: <span id="humidity"></span>%</li>
+               <li>Wind: <span id = "wind"></span>km/h</li>
+             </ul>
+            </div>
+        </div>
+        </div>
+    <div class="today-forecast">
+    <div class="row">
+        <div class="col">
+            14C
+            <br>
+            🌥
+            <br>
+            6 AM
+        </div>
+          <div class="col">  
+            19C
+            <br>
+           🌞
+            <br>
+            9 AM
+        </div>
+          <div class="col">
+            22C
+            <br>
+            🌞
+            <br>
+            12 AM
+          </div>  
+          <div class="col">
+            24C
+            <br>
+            🌦
+            <br>
+            3 PM
+          </div>  
+          <div class="col">
+            22C
+            <br>
+            ⛈
+            <br>
+            6 PM
+            </div>  
+          <div class="col">
+            22C
+            <br>
+            ☁
+            <br>
+            9 PM
+        </div> 
+    </div>
+    </div>
+    <div class="five-day-forecast">
+        <div class="row">
+            <div class="col">
+                Sn,
+                <br>
+                May 22
+                <br>
+                20 C 🌦
+            </div>
+            <div class="col">
+                Mn,
+                <br>
+                May 23
+                <br>
+                14 C 🌦
+            </div>
+            <div class="col">
+                Tu,
+                <br>
+                May 23
+                <br>
+                24 C 🌤
+            </div>
+            <div class="col">
+                Wd,
+                <br>
+                May 24
+                <br>
+                18 C 🌤
+            </div>
+            <div class="col">
+                Th,
+                <br>
+                May 25
+                <br>
+                21 C 🌧
+            </div>
+    </div>
+    </div>
+    </div>
+  <script src="style/style.js"></script>
+  </body>
+</html>
